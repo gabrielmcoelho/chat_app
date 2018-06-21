@@ -95,7 +95,6 @@ def clientThread(conn, addr):
 	welcomeMessage = "Welcome to the chat " + nickname + "!\n" + "Type commands() to see a list of commands!\n" + "Type something and hit Enter to send!\n";
 	conn.send(welcomeMessage.encode())
 
-	print("LIJSKOENGIOUAJSDHNBGASDE");
 	# Tell the others!
 	serv.msg_to_all((nickname + " entered the chat!\n").encode(), conn);
 
